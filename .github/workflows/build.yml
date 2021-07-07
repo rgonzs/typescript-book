@@ -23,7 +23,7 @@ jobs:
       - run: gitbook pdf . ./output/typescript-book-${SHA}.pdf
       - run: gitbook epub . ./output/typescript-book-${SHA}.epub
       - run: gitbook mobi . ./output/typescript-book-${SHA}.mobi
-      - name: upload pdf artifact
+      - name: upload pdf artifacts
         uses: actions/upload-artifact@v1
         with:
           name: typescript-book.pdf
